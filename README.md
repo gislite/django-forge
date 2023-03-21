@@ -16,6 +16,8 @@ python manage.py runserver
 ```
 
 
+## 相关配置
+
 允许远程访问：
 
 修改创建项目时生成的 `setting.py` 文件
