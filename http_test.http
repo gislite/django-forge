@@ -1,0 +1,5 @@
+###
+# http://47.104.152.23:6799/
+
+GET http://47.104.152.23:6799/users/
+Accept: application/json

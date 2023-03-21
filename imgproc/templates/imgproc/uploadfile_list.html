@@ -1,0 +1,15 @@
+{% extends './base.html' %}
+{% comment %}  uploadfile_list.html {% endcomment %}
+{% block content %}
+{% load static %}
+    <div class="p-3 align-self-center border border-1 bg-light shadow-lg ">
+        <h2>uploadfiles </h2>
+        <ul class="list-group">
+            {% for d in object_list %}
+                <li class="list-group-item"> {{ d.id }} , {{ d.title }} , {{ d.uploadfile }} </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}  
+
