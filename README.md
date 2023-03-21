@@ -28,6 +28,7 @@ python manage.py runserver
 
     ALLOWED_HOSTS = ['*']
 
+
 ```
 python manage.py runserver 0.0.0.0:6799
 ```
@@ -56,6 +57,7 @@ python manage.py shell
 
 
 首先，我们得创建一个能登录管理页面的用户。请运行下面的命令：
+
 
 ```
 python manage.py createsuperuser
