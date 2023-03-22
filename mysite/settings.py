@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'imgproc',
     'rest_framework',
+    'django_apscheduler',
+    'ap_scheduler'
+
 ]
 
 REST_FRAMEWORK = {

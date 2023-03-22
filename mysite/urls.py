@@ -20,6 +20,7 @@ from django.urls import include
 from rest_framework import routers
 from drf import views
 
+
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
@@ -30,11 +31,12 @@ router.register(r'groups', views.GroupViewSet)
 
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    # path('', include(router.urls)),
+    # path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
     path('image/', include("imgproc.urls")),
     path("accounts/", include("django.contrib.auth.urls")),  # new
+    path("apsch/", include("ap_scheduler.urls")),  # new
 
 ]
